@@ -1,3 +1,6 @@
+#ifndef MIROSLAVBEL_MAZE_GAME_GDI_ENGINE_MAZESIZE_HH
+#define MIROSLAVBEL_MAZE_GAME_GDI_ENGINE_MAZESIZE_HH
+
 #include <cstdint>         // uint8_t
 #include <stdexcept>       // out_of_range
 
@@ -5,6 +8,9 @@ namespace miroslavbel_maze_game_gdi {
 
    namespace engine {
 
+      /*!
+       * \brief Размеры лабиринта.
+       */
       class MazeSize {
          
             /*!
@@ -61,3 +67,5 @@ namespace miroslavbel_maze_game_gdi {
    } // namespace engine
 
 } // namespace miroslavbel_maze_game_gdi
+
+#endif // MIROSLAVBEL_MAZE_GAME_GDI_ENGINE_MAZESIZE_HH
