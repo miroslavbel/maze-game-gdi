@@ -16,4 +16,5 @@ add_executable(${PROJECT_NAME}
    "src/main.cpp"
 
    "src/engine/MazeSize.cpp"
+   "src/engine/MazePointMut.cpp"
 )
