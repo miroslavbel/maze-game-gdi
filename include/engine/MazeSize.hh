@@ -68,4 +68,4 @@ namespace miroslavbel_maze_game_gdi {
 
 } // namespace miroslavbel_maze_game_gdi
 
-#endif // MIROSLAVBEL_MAZE_GAME_GDI_ENGINE_MAZESIZE_HH
+#endif // #ifndef MIROSLAVBEL_MAZE_GAME_GDI_ENGINE_MAZESIZE_HH
