@@ -22,6 +22,10 @@ namespace miroslavbel_maze_game_gdi {
       uint8_t MazeSize::getHeight() const noexcept {
          return this->height;
       }
+
+      uint16_t MazeSize::getArea() const noexcept {
+         return static_cast<uint16_t>(this->width) * static_cast<uint16_t>(this->height);
+      }
       
       MazeSize::~MazeSize() = default;
 
