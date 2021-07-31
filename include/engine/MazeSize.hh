@@ -47,7 +47,7 @@ namespace miroslavbel_maze_game_gdi {
             */
             uint8_t getHeight() const noexcept;
 
-            /**
+            /*!
              * \brief Площадь лабиринта в клетках.
              * 
              * Больше нуля.
