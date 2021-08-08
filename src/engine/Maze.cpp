@@ -15,6 +15,10 @@ namespace miroslavbel_maze_game_gdi {
          // TODO: generate maze
       }
 
+      mazeCell::MazeCell Maze::getCellUnsafe(uint8_t x, uint8_t y) const noexcept {
+         return this->mazeData[ static_cast<uint16_t>(this->size.getWidth()) * static_cast<uint16_t>(y) + static_cast<uint16_t>(x) ];
+      }
+
       void Maze::bitwiseOrAssignment_Unsafe(MazePointMut& point, mazeCell::MazeCell cell) noexcept {
          this->mazeData[static_cast<uint16_t>(this->size.getWidth()) * static_cast<uint16_t>(point.getY()) + point.getX()] |= cell;
       }

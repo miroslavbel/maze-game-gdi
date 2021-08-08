@@ -36,6 +36,18 @@ namespace miroslavbel_maze_game_gdi {
             mazeCell::MazeCell* mazeData;
 
             /*!
+             * \brief Возвращает клетку по заданным координатам.
+             *
+             * \warning Координаты клетки должны быть валидными.
+             * 
+             * \param[in] x x-координата клетки
+             * \param[in] y y-координата клетки
+             * 
+             * \return запрашиваемая клетка
+             */
+            mazeCell::MazeCell getCellUnsafe(uint8_t x, uint8_t y) const noexcept;
+
+            /*!
              * \brief Применяет маску \a cell к клетке лабиринта, находящейся
              * по координатам \a point.
              *
