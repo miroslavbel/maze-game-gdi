@@ -59,6 +59,25 @@ namespace miroslavbel_maze_game_gdi {
              */
             void bitwiseOrAssignment_Unsafe(MazePointMut& point, mazeCell::MazeCell cell) noexcept;
 
+            /*!
+             * \brief Случайным образом выбирает соседнюю еще непосещенную
+             * генератором клетку.
+             * 
+             * Если такой клетки не существует, то вернет \a false. Иначе
+             * вернет \a true и запишет в \a point координаты найденной
+             * клетки, а также запишет в старую клетку информацию о направление
+             * движения.
+             * 
+             * \note Как генератор псевдослучайных чисел использует
+             * \a std::rand. А значит, хорошо бы чтоб \a std::srand уже была
+             * вызвана.
+             * 
+             * \param[in,out] point валидная точка
+             * 
+             * \return удалось ли найти соседнюю еще непосещенную клетку
+             */
+            bool getRandomUnvisitedNeighboringPointUnsafe(MazePointMut& point) noexcept;
+
          public:
 
             /*!
