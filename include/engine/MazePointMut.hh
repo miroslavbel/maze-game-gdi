@@ -74,6 +74,8 @@ namespace miroslavbel_maze_game_gdi {
              */
             MazePointMut& set(uint8_t x, uint8_t y) noexcept;
 
+            bool operator==(const MazePointMut& point) const;
+
             /*!
              * \brief Деструктор.
              */
