@@ -33,6 +33,10 @@ namespace miroslavbel_maze_game_gdi {
          return *this;
       }
       
+      bool MazePointMut::operator==(const MazePointMut& point) const {
+         return this->x == point.getX() && this->y == point.getY();
+      }
+      
       MazePointMut::~MazePointMut() = default;
 
    } // namespace engine
