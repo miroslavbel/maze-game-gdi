@@ -6,7 +6,7 @@ namespace miroslavbel_maze_game_gdi {
 
       namespace mazeCell {
 
-         inline bool isNotVisited(MazeCell cell) noexcept {
+         bool isNotVisited(MazeCell cell) noexcept {
             return cell >> 4 == 0 ? true : false;
          }
 

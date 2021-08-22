@@ -86,7 +86,7 @@ namespace miroslavbel_maze_game_gdi {
           * 
           * \return посетил ли генератор эту клетку
           */
-         inline bool isNotVisited(MazeCell cell) noexcept;
+         bool isNotVisited(MazeCell cell) noexcept;
 
       } // namespace mazeCell
 
